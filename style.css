@@ -1,0 +1,145 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppings', sans-serif;
+    box-sizing: border-box;
+}
+
+.container
+{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.todo-app
+{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2
+{
+    color:skyblue;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img
+{
+    width: 80px;
+    margin-left: 10px;
+}
+
+.row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input
+{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button
+{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background 0.15s, color 0.15s;
+}
+
+button:hover
+{
+    background: #ff5995;
+    color: antiquewhite;
+}
+
+button:active
+{
+    opacity: 0.7;
+}
+
+
+ul li
+{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before
+{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(https://th.bing.com/th/id/R.e8378b0e916fb970eae29e70b23e3eda?rik=j%2bbJgGEWzck%2bJw&riu=http%3a%2f%2fclipart-library.com%2fimg1%2f713957.png&ehk=7EyxDj%2bww%2fW%2buVe%2fpeawbqoB9MQvwahm3ZfQmoAT0jo%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center;
+    top: 7px;
+    left: 8px;
+    transition: background-image 0.9s;
+}
+
+ul li.checked
+{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before
+{
+    background-image: url(https://spng.pngfind.com/pngs/s/19-198669_checkbox-check-mark-hd-png-download.png);
+    height: 28px;
+    width: 28px;
+    border-radius: 30%;
+    left: 12px;
+}
+
+ul li span
+{
+    position: absolute;
+    right: 0;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover
+{
+    background: #edeef0;
+}
+
